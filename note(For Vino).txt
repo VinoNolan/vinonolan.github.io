@@ -1,0 +1,7 @@
+Untuk update git lakukan hal ini pada terminal :
+
+git add.
+git -m 'Komentar untuk perubahan'
+git push
+
+Done!
