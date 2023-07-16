@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #0984e3;
+}
+.foot-bg {
+  background-color: #0984e3;
+}
+.jumbotron {
+  background-color: rgba(13, 132, 224, 0.2);
+  padding-top: 6rem;
+}
+.jumbotron img {
+  max-width: 13%;
+  max-height: 13%;
+  /* border-radius: 50%; */
+}
+.bg-gallery {
+  background-color: rgba(13, 132, 224, 0.2);
+}
+.bgborder {
+  background-color: rgba(13, 132, 224, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+.Jumbo-img {
+  transition: 1s;
+}
+.Jumbo-img:hover {
+  transform: rotate(360deg);
+}
