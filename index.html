@@ -141,6 +141,33 @@
         </div>
       </div>
     </div>
+
+    <section id="my-ddd">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My 3D</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="dddbox">
+              <h4 class="ddd1">3D 1</h4>
+              <img src="img/insta.png" alt="icon 3d" class="iconddd">
+              <a href="#" class="btn btn-light dbutton">show details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="dddbox">
+              <h4 class="ddd1">3D 1</h4>
+              <img src="img/insta.png" alt="icon 3d" class="iconddd">
+              <a href="#" class="btn btn-light dbutton">show details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="white" fill-opacity="1"
         d="M0,32L48,48C96,64,192,96,288,90.7C384,85,480,43,576,37.3C672,32,768,64,864,85.3C960,107,1056,117,1152,122.7C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -409,6 +436,17 @@
     });
   </script>
   <!-- Contact Form Input JS -->
+  <!-- js tilt -->
+  <script type="text/javascript"
+    src="raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.min.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".dddbox"), {
+      max: 25,
+      speed: 800,
+      glare: true
+    });
+  </script>
+  <!-- js tilt -->
 </body>
 
 </html>
