@@ -13,7 +13,7 @@
   max-height: 13%;
   /* border-radius: 50%; */
 }
-.bg-gallery {
+.bg-projects {
   background-color: rgba(13, 132, 224, 0.2);
 }
 .bgborder {
@@ -21,3 +21,105 @@
   border-radius: 10px;
   padding: 20px;
 }
+.gallery-img {
+  width: 100%;
+  height: 100%;
+}
+
+#Gallery .row > * {
+  padding: 0;
+}
+
+.mbottom {
+  margin-bottom: 300px;
+}
+
+/* overlay */
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.8s;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay img {
+  max-height: 100%;
+  max-width: 100%;
+  /* Agar responsif dengan window biasakan pakai persen ya manis */
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.514);
+}
+
+.overlay:target img {
+  animation: zoomfade 0.8s;
+}
+
+.overlay .close img {
+  height: 10%;
+  width: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.overlay:target .close {
+  animation: close 1.8s ease-in-out;
+}
+
+.next {
+  height: 10%;
+  width: auto;
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  animation: close 1.8s ease-in-out;
+}
+
+.back {
+  height: 10%;
+  width: auto;
+  position: absolute;
+  left: 10%;
+  top: 45%;
+  animation: close 2s ease-in-out;
+}
+
+/* animasi */
+@keyframes zoomfade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes close {
+  0% {
+    transform: scale(0.6) translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+/* Akhir Overlay */
